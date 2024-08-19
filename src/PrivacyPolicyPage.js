@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import logoLoc from './assets/logoPrincipal.png';
-import {FaRegFileAlt,FaFacebookF,FaInstagram,FaLinkedin, FaUserShield, FaEnvelope, FaPhoneAlt, FaLock, FaCheckCircle } from 'react-icons/fa'; // Adicionei ícones
+import {FaRegFileAlt,FaFacebookF,FaInstagram,FaLinkedin, FaUserShield, FaEnvelope, FaPhoneAlt,  FaCheckCircle } from 'react-icons/fa'; // Adicionei ícones
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/privacy.css'; 
 
