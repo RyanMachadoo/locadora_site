@@ -2,6 +2,7 @@
   "name": "locadora-site",
   "version": "1.0.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -18,7 +19,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://RyanMachadoo.github.io/website_locadora",
+  
 
   "scripts": {
     "start": "react-scripts start",
