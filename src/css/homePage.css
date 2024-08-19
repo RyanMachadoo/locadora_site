@@ -1,0 +1,518 @@
+.vantagens-aluguel {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.vantagens-aluguel h2 {
+    margin-bottom: 30px;
+}
+
+.vantagens-img {
+    width: 100%;
+    height: auto;
+}
+
+.vantagens-aluguel ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.vantagens-aluguel ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.vantagens-aluguel ul li svg {
+    margin-right: 10px;
+    color: #28a745;
+}
+
+.home-page {
+    background-color: #f8f9fa; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.destaques {
+    background-color: #e9ecef; 
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.destaque-item {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.destaque-item strong {
+    color: #007bff; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.banner-container {
+    margin: 30px 0;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.wpp-icon {
+    width: 25px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.banner-img:hover {
+    transform: scale(1.05);
+}
+
+.locadora-info, .informacoes, .car-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.locadora-info h1, .informacoes h2, .car-info h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    animation: slideInLeft 0.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.car-image {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-card {
+    width: calc(30% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.car-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #20a54d;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer .social-icon {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer .social-icon:hover {
+    color: #007bff;
+}
+
+.footer-info {
+    margin-top: 15px; 
+    color: #6c757d; 
+    font-size: 12px; 
+}
+
+.footer-info small {
+    line-height: 1.5; 
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    padding: 0; 
+    background: #007bff; 
+    color: #fff;
+    border-bottom: 3px solid #0056b3; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.external-links {
+    display: flex;
+    gap: 15px; 
+}
+
+.external-link {
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.external-link:hover {
+    color: #5f9ea0; 
+}
+
+.external-link-img, .external-link-img_aut {
+    width: 50px; 
+    height: auto; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease; 
+}
+
+.external-link-img:hover, .external-link-img_aut:hover {
+    transform: scale(1.05); 
+}
+
+.privacy-link {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px;
+}
+
+.privacy-link:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+
+.privacy-link:active {
+    background-color: #0056b3; 
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .vantagens-aluguel .row {
+        flex-direction: column; /* Coloca a lista e a imagem em coluna */
+        align-items: center; /* Centraliza */
+    }
+
+    .vantagens-img {
+        width: 80%; /* Ajusta a largura da imagem em telas pequenas */
+    }
+
+    .car-card {
+        width: calc(100% - 20px); /* Cartões ocupam toda a largura */
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 0; 
+    }
+
+    .header-logo {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .external-links {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner-img {
+        height: 150px;
+    }
+
+    .locadora-info, .informacoes {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .locadora-info h1, .informacoes h2 {
+        font-size: 1.8rem;
+    }
+
+    .locadora-info p, .informacoes ul, .car-info p, .car-price {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .car-card {
+        width: calc(45% - 20px); /* Ajusta a largura dos cartões em telas médias */
+    }
+}
+
+.map-container {
+    margin: 30px 0;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar customizada */
+.navbar-custom {
+    background-color: #007bff; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    padding: 10px 20px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    margin: 0; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.navbar-custom.scrolled {
+    background-color: #000; 
+    transition: background-color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand img {
+    max-height: 50px; 
+    height: auto; 
+    width: auto; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.navbar-custom .navbar-toggler {
+    border: none; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.navbar-custom .navbar-toggler:hover {
+    transform: scale(1.1); 
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-custom .navbar-collapse {
+    justify-content: flex-end; 
+}
+
+.navbar-custom .nav-link {
+    color: #fff; 
+    font-size: 1rem; 
+    margin: 0 15px; 
+    transition: color 0.3s ease-in-out, transform 0.2s ease; 
+}
+
+.navbar-custom .nav-link:hover {
+    color: #dfe6e9; 
+    transform: translateY(-3px); 
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    padding-top: 0.5px; 
+}
+
+/* Estilos para responsividade */
+@media (max-width: 576px) {
+    .navbar-custom .navbar-brand img {
+        max-height: 40px; 
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 0.9rem; 
+        margin: 0 10px; 
+    }
+}
+
+.conheca {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0; 
+    text-align: center; 
+}
+
+.conheca h2 {
+    color: #007bff; 
+    margin-bottom: 20px; 
+}
+
+.conheca .row {
+    justify-content: center; 
+}
+
+.conheca-img {
+    width: 70px; 
+    height: 70px;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.conheca-img:hover {
+    transform: scale(1.3); 
+}
+
+.conheca a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.conheca a:hover {
+    color: #007bff; 
+    transform: scale(1.3); 
+}
+
+.informacoes {
+    margin: 20px 0; 
+}
+
+.por-que-item {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 12px; 
+    padding: 20px; 
+    text-align: center; 
+    margin: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.por-que-item:hover {
+    transform: translateY(-5px); 
+}
+
+.por-que-item svg {
+    font-size: 50px; 
+    margin-bottom: 10px; 
+    color: #007bff; 
+}
+
+.por-que-item p {
+    font-size: 16px; 
+    font-weight: 500; 
+    margin-top: 10px; 
+}
+
+.slick-prev, .slick-next {
+    z-index: 1; 
+    color: #007bff; 
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 24px; 
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    .vantagens-aluguel ul li {
+        font-size: 16px; /* Ajusta o tamanho da fonte em telas menores */
+    }
+    
+    .destaque-item {
+        font-size: 1rem; /* Reduz o tamanho do destaque */
+    }
+
+    .car-card {
+        width: calc(100% - 20px); /* Cartões ocupam toda a largura */
+    }
+
+    .footer {
+        text-align: center; /* Centraliza o footer em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .por-que-item {
+        margin: 5px; /* Reduz a margem entre os cards */
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/website_locadora/static/css/main.c173a6ba.css",
+    "main.js": "/website_locadora/static/js/main.82922b32.js",
+    "static/js/453.be6460fc.chunk.js": "/website_locadora/static/js/453.be6460fc.chunk.js",
+    "static/media/banner3.jpg": "/website_locadora/static/media/banner3.2ebbe45dafeb82a820af.jpg",
+    "static/media/LogoConsorcio.png": "/website_locadora/static/media/LogoConsorcio.352f52638d518c6f809c.png",
+    "static/media/banner1.jpg": "/website_locadora/static/media/banner1.c77d80e93db0a7d83349.jpg",
+    "static/media/banner2.jpg": "/website_locadora/static/media/banner2.c593fab85f0ea13fcc78.jpg",
+    "static/media/cars_image.jpg": "/website_locadora/static/media/cars_image.c339396b7e3c66c245ab.jpg",
+    "static/media/slick.svg": "/website_locadora/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/website_locadora/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/logo.svg": "/website_locadora/static/media/logo.eace9af7e5c2a1a2b5e182366f673b68.svg",
+    "static/media/slick.ttf": "/website_locadora/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/website_locadora/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/website_locadora/index.html",
+    "main.c173a6ba.css.map": "/website_locadora/static/css/main.c173a6ba.css.map",
+    "main.82922b32.js.map": "/website_locadora/static/js/main.82922b32.js.map",
+    "453.be6460fc.chunk.js.map": "/website_locadora/static/js/453.be6460fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c173a6ba.css",
+    "static/js/main.82922b32.js"
+  ]
+}

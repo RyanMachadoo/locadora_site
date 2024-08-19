@@ -1,0 +1,44 @@
+/* src/styles/App.css */
+
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+nav {
+  background-color: #ff1493; /* Rosa escuro para manter a consistência */
+  padding: 15px 30px; /* Espaçamento aumentado para um visual mais moderno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidade */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves */
+}
+
+nav:hover {
+  background-color: #ff69b4; /* Rosa claro ao passar o mouse */
+  transform: scale(1.02); /* Leve aumento ao passar o mouse */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Espaçamento maior entre os itens */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold; /* Fonte em negrito para destaque */
+  transition: color 0.3s ease; /* Animação de cor ao passar o mouse */
+}
+
+nav ul li a:hover {
+  color: #fff; /* Manter a cor branca */
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}

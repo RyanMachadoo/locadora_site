@@ -1,0 +1,276 @@
+/* src/css/privacy.css */
+
+/* Estilos gerais */
+.privacy-policy-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 70px; /* Ajuste para o tamanho do cabeçalho fixo */
+  background-color: #f8f9fa; /* Cor de fundo clara */
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%); /* Gradiente para o cabeçalho */
+  border-bottom: 3px solid #0056b3; /* Azul mais escuro */
+  z-index: 1000; /* Garantir que o cabeçalho está acima do conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para o cabeçalho */
+  flex-wrap: wrap; /* Permitir quebra de linha em dispositivos pequenos */
+}
+
+.header-logo {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home-button {
+  background-color: #007bff; /* Azul do Bootstrap */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.home-button:hover {
+  background-color: #0056b3; /* Azul escuro */
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Efeito de sombra no hover */
+}
+
+.main-content {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px; /* Aumentei o padding */
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease; /* Adicionei animação */
+}
+
+.date {
+  font-style: italic;
+  color: #6c757d; /* Cinza */
+}
+
+.title {
+  font-size: 2rem; /* Tamanho do título aumentado */
+  color: #007bff; /* Azul do Bootstrap */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff; /* Adicionei uma borda abaixo do título */
+  padding-bottom: 10px; /* Espaço abaixo do título */
+}
+
+h2 {
+  font-size: 1.5rem; /* Tamanho do subtítulo aumentado */
+  color: #007bff; /* Azul do Bootstrap */
+  margin-bottom: 15px;
+  border-bottom: 1px solid #007bff; /* Borda abaixo dos subtítulos */
+  padding-bottom: 5px; /* Espaço abaixo do subtítulo */
+}
+
+ul {
+  list-style-type: none; /* Removi marcadores padrão */
+  padding-left: 0; /* Remove padding da lista */
+}
+
+.animated-list li {
+  margin-bottom: 10px; /* Espaçamento entre itens da lista */
+  position: relative; /* Para posicionar o ícone */
+  padding-left: 30px; /* Espaço para o ícone */
+  transition: transform 0.3s; /* Transição suave */
+}
+
+.animated-list li:hover {
+  transform: translateX(5px); /* Movimento suave ao passar o mouse */
+}
+
+.icon {
+  position: absolute; /* Posicionamento do ícone */
+  left: 0;
+  top: 50%; /* Centralizar verticalmente */
+  transform: translateY(-50%); /* Ajustar para centralização perfeita */
+  color: #007bff; /* Cor dos ícones */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px; /* Ajuste no padding */
+  }
+
+  .header-logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+
+  .home-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%; /* Botão ocupa a largura total */
+    margin-top: 10px; /* Espaço acima do botão */
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.8rem; /* Ajuste para tamanhos menores */
+  }
+
+  h2 {
+    font-size: 1.3rem; /* Ajuste para tamanhos menores */
+  }
+
+  .revocation-card {
+    margin: 20px 0; /* Espaço vertical no card */
+    padding: 15px; /* Ajuste no padding do card */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo {
+    width: 50px;
+  }
+
+  .home-button {
+    padding: 8px 16px;
+    font-size: 12px;
+    width: 100%; /* Botão ocupa a largura total */
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem; /* Ajuste para tamanhos menores */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Ajuste para tamanhos menores */
+  }
+
+  .revocation-card {
+    padding: 10px; /* Ajuste no padding do card */
+  }
+}
+
+/* Estilos do Card de Revogação */
+.revocation-card {
+  background-color: #e7f1ff; /* Cor de fundo leve */
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px; /* Espaço acima do card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease; /* Transição suave */
+  position: relative;
+}
+
+.revocation-card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-icon {
+  font-size: 3rem; /* Tamanho do ícone */
+  color: #007bff; /* Cor do ícone */
+  margin-bottom: 15px; /* Espaço abaixo do ícone */
+  animation: bounce 1s infinite; /* Animação de pulso */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Tamanho do título do card */
+  color: #007bff; /* Azul do Bootstrap */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.card-description {
+  font-size: 1rem; /* Tamanho da descrição */
+  color: #333; /* Cor do texto */
+  margin-bottom: 15px; /* Espaço abaixo da descrição */
+}
+
+.revocation-button {
+  background-color: #007bff; /* Azul do Bootstrap */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+.revocation-button:hover {
+  background-color: #0056b3; /* Azul escuro */
+  transform: scale(1.05); /* Efeito de zoom no botão */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Posição original */
+  }
+  40% {
+    transform: translateY(-10px); /* Movimento para cima */
+  }
+  60% {
+    transform: translateY(-5px); /* Movimento para cima */
+  }
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer .social-icon {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer .social-icon:hover {
+  color: #007bff;
+}
+
+.footer-info {
+  margin-top: 15px; 
+  color: #6c757d; 
+  font-size: 12px; 
+}
+
+.footer-info small {
+  line-height: 1.5; 
+}
