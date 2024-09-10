@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import logoLoc from './assets/logoPrincipal.png';
-import {FaRegFileAlt,FaFacebookF,FaInstagram,FaLinkedin, FaUserShield, FaEnvelope, FaPhoneAlt,  FaCheckCircle } from 'react-icons/fa'; // Adicionei ícones
+import { FaRegFileAlt, FaFacebookF, FaInstagram, FaLinkedin, FaUserShield, FaEnvelope, FaPhoneAlt, FaCheckCircle } from 'react-icons/fa'; // Adicionei ícones
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/privacy.css'; 
 
@@ -77,25 +77,50 @@ const PrivacyPolicyPage = () => {
           Grupo Francauto<br />
           Para questões relacionadas ao tratamento de dados pessoais, entre em contato pelo e-mail lgpd@francauto.com.br.
         </p>
+
+        {/* Seção de Política de Cookies */}
+        <div className="cookies-policy">
+          <h2>Política de Cookies</h2>
+          <p>
+            Nossa Política de Cookies visa explicar como utilizamos cookies e outras tecnologias semelhantes em nosso site.
+          </p>
+          <p>
+            Cookies são pequenos arquivos que são armazenados no seu dispositivo quando você visita nosso site. Eles ajudam a melhorar a sua experiência ao lembrar suas preferências e ações anteriores.
+          </p>
+          <h2>Tipos de Cookies que Utilizamos</h2>
+          <ul className="animated-list">
+            <li><FaCheckCircle className="icon" /> Cookies Necessários: Essenciais para o funcionamento do site.</li>
+            <li><FaCheckCircle className="icon" /> Cookies de Desempenho: Coletam informações sobre como você usa o site, para nos ajudar a melhorar a experiência.</li>
+            <li><FaCheckCircle className="icon" /> Cookies de Funcionalidade: Permitem que o site lembre suas preferências e escolhas.</li>
+            <li><FaCheckCircle className="icon" /> Cookies de Publicidade: Usados para oferecer anúncios relevantes com base em seus interesses.</li>
+          </ul>
+          <h2>Gerenciamento de Cookies</h2>
+          <p>
+            Você pode gerenciar ou desativar cookies através das configurações do seu navegador. No entanto, desativar cookies pode afetar a funcionalidade de algumas partes do nosso site.
+          </p>
+          <p>
+            Para mais informações sobre cookies, você pode visitar <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener noreferrer">www.allaboutcookies.org</a>.
+          </p>
+        </div>
       </div>
       <div className="revocation-card animate__animated animate__fadeInUp">
-          <div className="card-icon">
-            <FaRegFileAlt />
-          </div>
-          <h3 className="card-title">Gerenciar Direitos</h3>
-          <p className="card-description">
-            Clique aqui para acessar sua página de gerenciamento de direitos sobre os seus dados pessoais.
-          </p>
-          <Button 
-            className="revocation-button" 
-            onClick={() => window.location.href = 'https://francautolgpd.netlify.app/'}
-          >
-            Gerenciar Direitos
-          </Button>
+        <div className="card-icon">
+          <FaRegFileAlt />
         </div>
+        <h3 className="card-title">Gerenciar Direitos</h3>
+        <p className="card-description">
+          Clique aqui para acessar sua página de gerenciamento de direitos sobre os seus dados pessoais.
+        </p>
+        <Button 
+          className="revocation-button" 
+          onClick={() => window.location.href = 'https://francautolgpd.netlify.app/'}
+        >
+          Gerenciar Direitos
+        </Button>
+      </div>
       <footer className="footer">
         <p>© 2024 Grupo Francauto - Todos os direitos reservados.</p>
-             <div className="social-icons">
+        <div className="social-icons">
           <a href="https://www.facebook.com/vw.francauto/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaFacebookF />
           </a>

@@ -1,23 +1,21 @@
-/* src/css/privacy.css */
 
-/* Estilos gerais */
 .privacy-policy-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 70px; /* Ajuste para o tamanho do cabeçalho fixo */
-  background-color: #f8f9fa; /* Cor de fundo clara */
+  padding-top: 70px; 
+  background-color: #f8f9fa; 
   color: #333;
 }
 
 .header {
-  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%); /* Gradiente para o cabeçalho */
-  border-bottom: 3px solid #0056b3; /* Azul mais escuro */
-  z-index: 1000; /* Garantir que o cabeçalho está acima do conteúdo */
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%); 
+  border-bottom: 3px solid #0056b3; 
+  z-index: 1000; 
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para o cabeçalho */
-  flex-wrap: wrap; /* Permitir quebra de linha em dispositivos pequenos */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  flex-wrap: wrap; 
 }
 
 .header-logo {
@@ -33,7 +31,7 @@
 }
 
 .home-button {
-  background-color: #007bff; /* Azul do Bootstrap */
+  background-color: #007bff; 
   color: white;
   border: none;
   padding: 12px 24px;
@@ -43,63 +41,63 @@
 }
 
 .home-button:hover {
-  background-color: #0056b3; /* Azul escuro */
+  background-color: #0056b3; 
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Efeito de sombra no hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .main-content {
   background: #ffffff;
   border-radius: 8px;
-  padding: 30px; /* Aumentei o padding */
+  padding: 30px; 
   margin-top: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease; /* Adicionei animação */
+  animation: fadeIn 1s ease; 
 }
 
 .date {
   font-style: italic;
-  color: #6c757d; /* Cinza */
+  color: #6c757d; 
 }
 
 .title {
-  font-size: 2rem; /* Tamanho do título aumentado */
-  color: #007bff; /* Azul do Bootstrap */
+  font-size: 2rem; 
+  color: #007bff; 
   margin-bottom: 15px;
-  border-bottom: 2px solid #007bff; /* Adicionei uma borda abaixo do título */
-  padding-bottom: 10px; /* Espaço abaixo do título */
+  border-bottom: 2px solid #007bff; 
+  padding-bottom: 10px;
 }
 
 h2 {
-  font-size: 1.5rem; /* Tamanho do subtítulo aumentado */
-  color: #007bff; /* Azul do Bootstrap */
+  font-size: 1.5rem; 
+  color: #007bff; 
   margin-bottom: 15px;
-  border-bottom: 1px solid #007bff; /* Borda abaixo dos subtítulos */
-  padding-bottom: 5px; /* Espaço abaixo do subtítulo */
+  border-bottom: 1px solid #007bff;
+  padding-bottom: 5px; 
 }
 
 ul {
-  list-style-type: none; /* Removi marcadores padrão */
-  padding-left: 0; /* Remove padding da lista */
+  list-style-type: none; 
+  padding-left: 0; 
 }
 
 .animated-list li {
-  margin-bottom: 10px; /* Espaçamento entre itens da lista */
-  position: relative; /* Para posicionar o ícone */
-  padding-left: 30px; /* Espaço para o ícone */
-  transition: transform 0.3s; /* Transição suave */
+  margin-bottom: 10px; 
+  position: relative;
+  padding-left: 30px;
+  transition: transform 0.3s; 
 }
 
 .animated-list li:hover {
-  transform: translateX(5px); /* Movimento suave ao passar o mouse */
+  transform: translateX(5px); 
 }
 
 .icon {
-  position: absolute; /* Posicionamento do ícone */
+  position: absolute; 
   left: 0;
-  top: 50%; /* Centralizar verticalmente */
-  transform: translateY(-50%); /* Ajustar para centralização perfeita */
-  color: #007bff; /* Cor dos ícones */
+  top: 50%; 
+  transform: translateY(-50%); 
+  color: #007bff;
 }
 
 @keyframes fadeIn {
@@ -111,12 +109,12 @@ ul {
   }
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px; /* Ajuste no padding */
+    padding: 10px; 
   }
 
   .header-logo {
@@ -127,8 +125,8 @@ ul {
   .home-button {
     padding: 10px 20px;
     font-size: 14px;
-    width: 100%; /* Botão ocupa a largura total */
-    margin-top: 10px; /* Espaço acima do botão */
+    width: 100%;
+    margin-top: 10px; 
   }
 
   .main-content {
@@ -136,16 +134,16 @@ ul {
   }
 
   .title {
-    font-size: 1.8rem; /* Ajuste para tamanhos menores */
+    font-size: 1.8rem; 
   }
 
   h2 {
-    font-size: 1.3rem; /* Ajuste para tamanhos menores */
+    font-size: 1.3rem; 
   }
 
   .revocation-card {
-    margin: 20px 0; /* Espaço vertical no card */
-    padding: 15px; /* Ajuste no padding do card */
+    margin: 20px 0;
+    padding: 15px; 
   }
 }
 
@@ -157,7 +155,7 @@ ul {
   .home-button {
     padding: 8px 16px;
     font-size: 12px;
-    width: 100%; /* Botão ocupa a largura total */
+    width: 100%; 
   }
 
   .main-content {
@@ -165,77 +163,77 @@ ul {
   }
 
   .title {
-    font-size: 1.5rem; /* Ajuste para tamanhos menores */
+    font-size: 1.5rem; 
   }
 
   h2 {
-    font-size: 1.2rem; /* Ajuste para tamanhos menores */
+    font-size: 1.2rem; 
   }
 
   .revocation-card {
-    padding: 10px; /* Ajuste no padding do card */
+    padding: 10px; 
   }
 }
 
-/* Estilos do Card de Revogação */
+
 .revocation-card {
-  background-color: #e7f1ff; /* Cor de fundo leve */
+  background-color: #e7f1ff; 
   border-radius: 8px;
   padding: 20px;
-  margin-top: 30px; /* Espaço acima do card */
+  margin-top: 30px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease; /* Transição suave */
+  transition: transform 0.3s ease; 
   position: relative;
 }
 
 .revocation-card:hover {
-  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  transform: scale(1.05); 
 }
 
 .card-icon {
-  font-size: 3rem; /* Tamanho do ícone */
-  color: #007bff; /* Cor do ícone */
-  margin-bottom: 15px; /* Espaço abaixo do ícone */
-  animation: bounce 1s infinite; /* Animação de pulso */
+  font-size: 3rem; 
+  color: #007bff;
+  margin-bottom: 15px; 
+  animation: bounce 1s infinite; 
 }
 
 .card-title {
-  font-size: 1.5rem; /* Tamanho do título do card */
-  color: #007bff; /* Azul do Bootstrap */
-  margin-bottom: 10px; /* Espaço abaixo do título */
+  font-size: 1.5rem; 
+  color: #007bff; 
+  margin-bottom: 10px; 
 }
 
 .card-description {
-  font-size: 1rem; /* Tamanho da descrição */
-  color: #333; /* Cor do texto */
-  margin-bottom: 15px; /* Espaço abaixo da descrição */
+  font-size: 1rem; 
+  color: #333; 
+  margin-bottom: 15px; 
 }
 
 .revocation-button {
-  background-color: #007bff; /* Azul do Bootstrap */
+  background-color: #007bff; 
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 14px;
   border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
 }
 
 .revocation-button:hover {
-  background-color: #0056b3; /* Azul escuro */
-  transform: scale(1.05); /* Efeito de zoom no botão */
+  background-color: #0056b3; 
+  transform: scale(1.05); 
 }
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); /* Posição original */
+    transform: translateY(0); 
   }
   40% {
-    transform: translateY(-10px); /* Movimento para cima */
+    transform: translateY(-10px); 
   }
   60% {
-    transform: translateY(-5px); /* Movimento para cima */
+    transform: translateY(-5px);
   }
 }
 
@@ -273,4 +271,29 @@ ul {
 
 .footer-info small {
   line-height: 1.5; 
+}
+
+
+.cookies-policy {
+  margin-top: 40px; 
+}
+
+.cookies-policy h2 {
+  font-size: 1.5rem;
+  color: #007bff; 
+  margin-bottom: 15px;
+  border-bottom: 1px solid #007bff; 
+  padding-bottom: 5px; 
+}
+
+.cookies-policy p {
+  margin-bottom: 20px; 
+}
+
+.cookies-policy ul {
+  margin-left: 20px; /* Espaço à esquerda da lista */
+}
+
+.cookies-policy .icon {
+  color: #007bff; /* Cor dos ícones */
 }

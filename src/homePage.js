@@ -17,6 +17,10 @@ import { FaInstagram, FaFacebookF, FaClock, FaMapMarkerAlt, FaPhoneAlt, FaCar, F
 import logoAut from './assets/logo.svg';
 import logoCons from './assets/LogoConsorcio.png';
 import cars from './assets/cars_image.jpg';
+import viruts_card from './assets/virtus_card.webp';
+import tcross_card from './assets/t_cross_card.webp';
+import polo_card from './assets/polo_card.webp';
+import kwid_card from './assets/kwid_card.webp';
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +51,7 @@ const HomePage = () => {
       capacidade: 5,
       combustivel: 'Flex',
       precoDiaria: 180.00,
-      imagem: cars,
+      imagem: kwid_card,
     },
     {
       id: 2,
@@ -58,7 +62,7 @@ const HomePage = () => {
       capacidade: 5,
       combustivel: 'Flex',
       precoDiaria: 200.00,
-      imagem: cars,
+      imagem: polo_card,
     },
     {
       id: 3,
@@ -69,7 +73,7 @@ const HomePage = () => {
       capacidade: 5,
       combustivel: 'Flex',
       precoDiaria: 250.00,
-      imagem: cars,
+      imagem: viruts_card,
     }, {
       id: 3,
       marca: 'Volkswagen',
@@ -79,7 +83,7 @@ const HomePage = () => {
       capacidade: 5,
       combustivel: 'Flex',
       precoDiaria: 270.00,
-      imagem: cars,
+      imagem: tcross_card,
     },
   ];
 
@@ -98,9 +102,11 @@ const HomePage = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 8000,
     responsive: [
       {
-        breakpoint: 768, // Para dispositivos menores
+        breakpoint: 768, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -128,7 +134,7 @@ const HomePage = () => {
 
     if (!window.google) {
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AhBvRjR6594akacVg94fVuF5ip4=&callback=initMap`;
       script.async = true;
       script.defer = true;
       document.body.appendChild(script);
@@ -136,6 +142,27 @@ const HomePage = () => {
       initMap();
     }
   }, []);
+
+  //Rolagem do navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar-custom");
+      console.log('Navbar element:', navbar);
+      console.log('ScrollY:', window.scrollY);
+
+      if (window.scrollY > 50) {
+        navbar?.classList.add("scrolled");
+      } else {
+        navbar?.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
 
   return (
     <div className="home-page">
@@ -239,6 +266,7 @@ const HomePage = () => {
           <p><FaEnvelope/> francautolocadora@gmail.com </p> 
         </div>
       </div>
+      <h1 className='conheca'>Nossos Carros</h1>
       <div className="car-list">
         {carros.map((carro) => (
           <div key={carro.id} className="car-card">
@@ -288,7 +316,7 @@ const HomePage = () => {
 
       <div id='faq-section'  className="faq-section">
 <h2 > Dúvidas Frequentes <FaQuestion/></h2>
-<FAQItem question="O veículo já é entregue abastecido?" answer="Sim, o veículo já entregue de tanque cheio, e devolvido na mesma condição." />
+<FAQItem question="O veículo já é entregue abastecido?" answer="Sim, o veículo já entregue de tanque cheio, e deve ser devolvido na mesma condição." />
 <FAQItem question="O veículo já vem com o Sem Parar?" answer="Não, o cliente faz o cadastro da tag em uma loja conveniada." />
 <FAQItem question="Consigo devolver o veículo em outra cidade?" answer="Não, nossa agência é somente em Franca – SP." />
 <FAQItem question="Como é feito o caução do veículo?" answer="O caução é feito no cartão de crédito do contratante do veículo, ou por pix." />
